@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
+import Test from "./Test"
 
 /* class App extends React.Component {
 
@@ -35,16 +36,23 @@ const App = () => {
 
     //Hook
     const [titulo,setTitulo] = React.useState("Mi Aplicacion de React")
+    const [visible,setVisible] = React.useState(true)
     //const [subtitulo,setSubtitulo] = React.useState("Mi Subtitulo")
 
     const cambiarTitulo = () => {
         setTitulo("Nuevo Titulo")
     }
 
+    const toggleTest = () => {
+        setVisible(!visible)
+    }
+
     return(
         <>
             <Header titulo={titulo}/>
             <button onClick={ cambiarTitulo }>Cambiar Titulo</button>
+            <button onClick={ toggleTest }>mostrar el componente test</button>
+            {visible ? <Test titulo={titulo} /> : null}
             <Footer titulo={titulo}/>
         </>
     )
