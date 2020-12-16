@@ -37,6 +37,7 @@ const App = () => {
     //Hook
     const [titulo,setTitulo] = React.useState("Mi Aplicacion de React")
     const [visible,setVisible] = React.useState(true)
+    const [links,setLinks] = React.useState(["home","productos","mi cuenta"])
     //const [subtitulo,setSubtitulo] = React.useState("Mi Subtitulo")
 
     const cambiarTitulo = () => {
@@ -47,12 +48,14 @@ const App = () => {
         setVisible(!visible)
     }
 
+    //console.log(links)
+
     return(
         <>
-            <Header titulo={titulo}/>
+            <Header titulo={titulo} links={links}/>
             <button onClick={ cambiarTitulo }>Cambiar Titulo</button>
             <button onClick={ toggleTest }>mostrar el componente test</button>
-            {visible ? <Test titulo={titulo} /> : null}
+            {/* visible ? <Test titulo={titulo} /> : null */}
             <Footer titulo={titulo}/>
         </>
     )
