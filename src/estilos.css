@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body , #root {
+    height: 100vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#root header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: yellow;
+}
+
+#root header nav a {
+    margin-left: 1rem;
+}
+
+
+#root main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+#root footer {
+    padding: 1rem;
+}
+
+#categorias {
+    display: flex;
+    flex-direction: column;
+}
+
+#categorias a {
+    margin: 1rem 0;
+}

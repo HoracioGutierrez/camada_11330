@@ -1,1 +1,28 @@
 https://es.reactjs.org/docs/react-component.html
+
+
+npm i|install {-g|-S|--save|-D|--save-dev} <paquete>
+
+
+BrowserRouter : API History
+HashRouter : location.hash
+MemoryRouter : entornos que no sean navegador
+StaticRouter : SSR(Server Side Rendering)
+
+
+src/
+    |_index.js
+    |_estilos.css
+    |_ui/
+        |_layout/
+            |_App.js
+            |_Header.js
+            |_Footer.js
+            |_Main.js
+        |_paginas/
+            |_Home.js
+            |_Productos.js
+            |_Cuenta.js
+        |_widget/
+
+    |_api/
