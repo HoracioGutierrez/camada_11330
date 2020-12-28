@@ -11,11 +11,13 @@ const Header = ({titulo,links}) => {
             </NavLink>
 
             <nav>
-                {links.map((elemento,indice)=>{ 
-                    /* return <a href={`/${elemento}`} key={indice}>{elemento}</a> */
-                    /* return <a href={"/"+elemento} key={indice}>{elemento}</a> */
+{/*                 {links.map((elemento,indice)=>{ 
                     return <NavLink to={"/"+elemento} key={indice}>{elemento}</NavLink> 
                  })}
+                 
+ */}            
+                <NavLink to="/category/1">Usuario 1</NavLink>
+                <NavLink to="/category/2">Usuario 2</NavLink>
             </nav>
         </header>
     )

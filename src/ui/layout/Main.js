@@ -4,6 +4,7 @@ import Home from "../paginas/Home"
 import Productos from "../paginas/Productos"
 import Cuenta from "../paginas/Cuenta"
 import Items from '../paginas/Items'
+import ItemListContainer from '../paginas/ItemListContainer'
 
 
 const Main = () => {
@@ -12,7 +13,16 @@ const Main = () => {
 
             <Switch>
 
-                <Route path="/" exact >
+                <Route path="/" exact>
+                    <ItemListContainer/>
+                </Route>
+
+                <Route path="/category/:id" exact>
+                    <ItemListContainer/>
+                </Route>
+
+
+                {/* <Route path="/" exact >
                     <Home/>
                 </Route>
                 
@@ -26,7 +36,7 @@ const Main = () => {
                 
                 <Route path="/categorias/:id">
                     <Items/>
-                </Route>
+                </Route> */}
 
             </Switch>
 

@@ -26,3 +26,29 @@ src/
         |_widget/
 
     |_api/
+
+
+
+
+<Route path="/path2"><MiComponente/></Route>
+<Route path="/path2"><MiComponente/></Route>
+
+
+const MiComponente = () => {
+
+    const [estado,setEstado] = useState([])
+    const params_de_url = useUparams()
+
+    return(
+        <>
+            {estado}
+        </>
+    )
+}
+
+
+1- Necesito un componente
+2- Necesito que el componente muestre una lista de categorias!DEPRECADO
+3- Necesito que el componente se muestre en dos rutas distintas
+4- Necesito que el componente muestre una lista de categorias distintas dependiendo la ruta 
+5- Necesito la URL
